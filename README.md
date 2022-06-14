@@ -3,7 +3,7 @@ Electra IR ESP Home Component
 
 Convenience Repo to make installing @liads 's custom component for electra ac (rc-3 ir remote)
 
-Big thank you to @liad for creating this component.
+Big thank you to [@liads](https://github.com/liads) for creating this component.
 
 
 Example Usage:
