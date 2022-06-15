@@ -1,0 +1,19 @@
+{
+    "name": "ElectraClimate",
+    "version": "1.0.0",
+    "description": "ElectraClimate is a free and open standard with ready-made API to control electra acs",
+    "keywords": "electra, esphome, ac",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jhabshoosh/esp-home-electra-ir.git"
+    },
+    "authors": [
+      {
+        "name": "jhabshoosh"
+      }
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "frameworks": "*",
+    "platforms": "*"
+  }
