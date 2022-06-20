@@ -149,7 +149,9 @@ class ElectraClimate : public climate::Climate, public Component {
         break;
     }
 
-    auto temp = (uint8_t) roundf(clamp(this->target_temperature, ELECTRA_TEMP_MIN, ELECTRA_TEMP_MAX));
+    auto temp = (uint8_t) roundf(
+      this->target_temperature <= ELECTRA_TEMP_MIN ? ELECTRA_TEMP_MIN :
+      this->target_temperature >= ELECTRA_TEMP_MAX ? ELECTRA_TEMP_MAX : this->target_temperature);
     code.temperature = temp - 15;
 
     ESP_LOGD(TAG, "Sending electra code: %lld", code.num);
